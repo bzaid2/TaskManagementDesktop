@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManagement.Interfaces\TaskManagement.Interfaces.csproj" />
+    <ProjectReference Include="..\TaskManagement.LiteDb\TaskManagement.LiteDb.csproj" />
+    <ProjectReference Include="..\TaskManagement.Messenger\TaskManagement.Messenger.csproj" />
+    <ProjectReference Include="..\TaskManagement.Models\TaskManagement.Models.csproj" />
+    <ProjectReference Include="..\TaskManagement.Plugins\TaskManagement.Plugins.csproj" />
+    <ProjectReference Include="..\TaskManagement.Validations\TaskManagement.Validations.csproj" />
+  </ItemGroup>
+
+</Project>
